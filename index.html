@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html lang="pt">
+<!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs -->
+<meta charset="utf-8">
+<title>PUB</title>
+<meta name="description" content="">
+<meta name="author" content="Rachid">
+
+<!-- Favicons-->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" >
+<link href="css/socialize-bookmarks.css" rel="stylesheet">
+<link href="js/fancybox/source/jquery.fancybox.css?v=2.1.4" rel="stylesheet">
+<link href="check_radio/skins/square/aero.css" rel="stylesheet">
+
+<!-- Toggle Switch -->
+<link rel="stylesheet" href="css/jquery.switch.css">
+
+<!-- Slider-->
+
+
+<!-- Owl Carousel Assets -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+
+<!-- Google web font -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Jquery -->
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.8.22.min.js"></script>
+
+<!-- Jquery -->
+
+
+<!-- Wizard-->
+<script src="js/jquery.wizard.js"></script>
+
+<!-- Radio and checkbox styles -->
+<script src="check_radio/jquery.icheck.js"></script>
+
+<!-- HTML5 and CSS3-in older browsers-->
+<script src="js/modernizr.custom.17475.js"></script>
+
+<!-- Support media queries for IE8 -->
+<script src="js/respond.min.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11097556-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+
+	<header>
+         <div class="container">
+            <div class="row">
+        	<div class="col-md-4 col-xs-3" id="logo"><a href="index.html">PUB</a></div>
+            
+            <div class="btn-responsive-menu"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
+
+            <nav class="col-md-8 col-xs-9" id="top-nav">
+            	<ul>
+                    <li><a href="../index.html">P1</a></li>
+            </nav><!-- End Nav -->
+            
+         </div><!-- End row -->
+         </div><!-- End container -->
+        </header> <!-- End header -->
+        	
+            <div class="container">
+             <div class="row">
+                 <div class="col-md-12 main-title">
+                 <h1>PESQUISA UNIVERSITÁRIA SOBRE BEBIDAS</h1>
+                <p>Quer saber mais sobre seu consumo de álcool?</p>
+                </div>
+       		</div>
+            </div>
+
+<section class="container" id="main">
+
+<!-- Start Survey container -->
+<div id="survey_container">
+
+	<div id="top-wizard">
+		<strong>Progresso </strong>
+		<div id="progressbar"></div>
+		<div class="shadow"></div>
+	</div><!-- end top-wizard -->
+    
+	<form name="survey_container" action="" method="POST">
+	<div id="middle-wizard">
+                
+    <div class="step">
+				<div class="row">
+					<h3 class="col-md-12"><center>Antes de apresentar informações sobre seu uso de álcool e como você se compara com outras pessoas preciso saber um pouco mais sobre você.</center></h3>
+					<div class="col-md-4 col-md-offset-4">
+						<ul class="data-list" id="terms">
+							<li>
+                            <strong>Você aceita os <a href="#" data-toggle="modal" data-target="#terms-txt">termos e condições</a> ?</strong>
+							<div style="position:relative">
+								<select class=" example-1 requi" name="terms">
+									<option value="">Não</option>
+									<option value="Accepted">Sim</option>
+								</select>
+							</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+                
+			</div><!-- end step info-->
+            
+            <div class="step row" >
+						<div class="col-md-10">
+                        <h3>Você é estudante universitário?</h3>
+                        <ul class="data-list-2" >
+						<li><input type="radio" name="question_1" value="answer 1 question 1" class="requi"/><label>Não</label></li>
+						<li><input type="radio" name="question_1" value="answer 2 question 1" class="requi"/><label>Sim</label></li>
+                        </ul>
+				</div>
+		   </div><!-- end step question 1-->
+           
+            <div class="step row" >
+						<div class="col-md-10">
+                        <h3>Você já consumiu álcool alguma vez na vida?</h3>
+                        <ul class="data-list-2" >
+						<li><input type="radio" name="question_2" value="answer 1 question 2" class="requi"/><label>Não</label></li>
+						<li><input type="radio" name="question_2" value="answer 2 question 2" class="requi"/><label>Sim</label></li>
+                        </ul>
+				</div>
+		   </div><!-- end step question 2-->
+
+                   <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Você já consumiu álcool com Medavane?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_2" value="answer 1 question 2" class="requi"/><label>Não</label></li>
+            <li><input type="radio" name="question_2" value="answer 2 question 2" class="requi"/><label>Sim</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 2-->
+                   
+            <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Como você ficou sabendo deste site?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Redes Sociais
+</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Recebi convite pro e-mail</label></li>
+                        <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Compartilhado por amigos
+</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Divulgação em outros sites</label></li>
+            <li><input type="text" name="outros" class="requi form-control" placeholder="Outros" /></li>
+
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+            <div class="step row" >
+			  <div class="col-md-10">
+                        <h3>Neste momento, o quão interessado você está em saber mais sobre seu consumo de álcool atual?</h3>
+              </div>
+                        <div class="col-md-6">
+                            <ul>
+    						              <li><div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div></li>
+                            </ul>
+				        </div>
+
+		    </div><!-- end step question 4-->
+              
+
+            <div class="step row" >
+					<h3 class="col-md-12"><center>Antes de apresentar informações sobre seu uso de álcool e como você se compara com outras pessoas preciso saber um pouco mais sobre você</center></h3>
+					<div class="col-sm-6">
+						<ul class="data-list">
+							<li><input type="text" name="firstname" class="requi form-control" placeholder="Nome"></li>
+						</ul>
+					</div><!-- end col-md-6 -->
+                    
+					<div class="col-sm-6">             
+						<ul class="data-list">
+							<li>
+							<div class="styled-select">
+								<select class="form-control requi" name="country">
+									<option value="" selected>Em que estado você mora?</option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+								</select>
+							</div>
+							</li>
+						</ul>
+
+        </div><!-- end col-md-6 -->
+
+      </div>   
+
+
+      <div class="step row" >
+            <div class="col-md-12">
+         <h3>Gênero</h3>               
+						<ul class="data-list">
+							<li><input name="gender" type="radio" class="requi" value="Male"><label class="label_gender"> Masculino</label></li>
+							<li><input name="gender" type="radio" class="requi" value="Female"><label class="label_gender"> Feminino</label></li>
+              <li><input name="gender" type="radio" class="requi" value="Female"><label class="label_gender"> Prefiro não informar</label></li>
+						</ul>
+             </div>           
+					
+            <div class="col-md-12">
+         <h3>Qual sua idade?</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="00"><label>anos</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Qual o seu peso?</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="00"><label>kg</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Qual a sua altura?</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0,00"><label>metros</label></li>
+            </ul>
+             </div>           
+          
+        </div><!-- end question -->
+
+
+                    <div class="step row" >
+            <div class="col-md-10">
+                        <h3>A instituição em que você estuda é:</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Pública</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Privada</label></li>
+            <li><input id="website" name="website" type="text" value="" ></li><!-- antispam -->
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                           <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Qual a área de concentração de seu curso?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Biológicas</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Humanas</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Exatas</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                            <div class="step row" >
+              <div class="col-md-10">
+                        <h3>Em qual ano do curso você está atualmente?</h3>
+              </div> 
+            <div class="col-md-3">            
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="1"><label>ANO</label></li>
+            </ul>
+            </div>
+             </div> <!-- end step question 4-->
+
+                           <div class="step row" >
+                            <div class="col-md-12">
+                        <h3>Nos últimos 3 meses, EM UMA SEMANA TÍPICA, quantas doses padrão de álcool você consome normalmente em cada dia da semana? *Somente números inteiros
+</h3>
+              </div> 
+                   <div class="col-md-12">
+         <h3>Segunda</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Terça</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Quarta</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Quinta</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Sexta</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             </div> <!-- end step question 4-->
+
+                           <div class="step row" >
+                            <div class="col-md-12">
+                        <h3>Nos últimos 3 meses, NA SEMANA QUE VOCÊ MAIS BEBEU, quantas doses você consumiu em cada dia da semana? *Somente números inteiros
+</h3>
+              </div> 
+                   <div class="col-md-12">
+         <h3>Segunda</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Terça</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Quarta</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Quinta</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             <div class="col-md-12">
+         <h3>Sexta</h3>               
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>doses</label></li>
+            </ul>
+             </div> 
+
+             </div> <!-- end step question 4-->
+
+
+            <div class="step row" >
+              <div class="col-md-10">
+                        <h3>No dia da semana em que você mais bebeu, quanto tempo (horas) você gastou bebendo, aproximadamente?</h3>
+              </div>
+                        <div class="col-md-6">
+                            <ul>
+                                          <li><div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div></li>
+                            </ul>
+                        </div>
+
+            </div><!-- end step question 4-->
+
+                            <div class="step row" >
+              <div class="col-md-10">
+                        <h3>Em média, quanto dinheiro você gasta com bebidas alcoólicas por saída/evento? (incluindo festas com consumação, festas open bar, esquentas, em bares, bebendo em casa, etc.)</h3>
+              </div> 
+            <div class="col-md-3">            
+            <ul class="data-list">
+              <li><input type="text" name="quantity" value="" class="qty form-control requi" placeholder="0"><label>reais</label></li>
+            </ul>
+            </div>
+             </div> <!-- end step question 4-->
+              
+                           <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Com que frequência você toma bebidas alcoólicas?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Nunca</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Mensalmente ou menos</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>De 2 a 4 vezes por mês</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>De 2 a 3 vezes por semana</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>4 ou mais vezes por semana</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                                  <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Nas ocasiões em que bebe, quantas doses você consome tipicamente?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>1 ou 2</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>3 ou 4</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>5 ou 6</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>7, 8 ou 9</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>10 ou mais</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                                         <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Com que frequência você toma “cinco ou mais doses” de uma vez?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Nunca</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Menos do que uma vez ao mês</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Mensalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Semanalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Todos ou quase todos os dias</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+
+                                         <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Quantas vezes, ao longo dos últimos 3 meses, você achou que não conseguiria parar de beber uma vez tendo começado?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Nunca</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Menos do que uma vez ao mês</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Mensalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Semanalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Todos ou quase todos os dias</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                                                <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Quantas vezes, ao longo dos últimos 3 meses, você, por causa do álcool, não conseguiu fazer o que era esperado de você?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Nunca</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Menos do que uma vez ao mês</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Mensalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Semanalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Todos ou quase todos os dias</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+
+                                                <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Quantas vezes, ao longo dos últimos 3 meses, você precisou beber pela manhã para se sentir bem ao longo do dia após ter bebido no dia anterior?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Nunca</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Menos do que uma vez ao mês</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Mensalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Semanalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Todos ou quase todos os dias</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                                                <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Quantas vezes, ao longo dos últimos 3 meses, você se sentiu culpado ou com remorso depois de ter bebido?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Nunca</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Menos do que uma vez ao mês</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Mensalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Semanalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Todos ou quase todos os dias</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                                                       <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Quantas vezes, ao longo dos últimos 3 meses, você foi incapaz de lembrar do que aconteceu devido à bebida?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Nunca</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Menos do que uma vez ao mês</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Mensalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Semanalmente</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Todos ou quase todos os dias</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                                                              <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Alguma vez na vida você já causou ferimentos ou prejuízos a você mesmo ou a outra pessoa após ter bebido?
+</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Não</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Sim, mas não nos últimos 3 meses</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Sim, nos últimos 3 meses</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                                           
+                                                              <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Senti ressaca (dores de cabeça, enjoos) na manhã seguinte após ter bebido.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_1" value="sim1" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_1" value="nao2" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Não fui capaz de me lembrar do que fiz, durante longos períodos de tempo, quando bebi pesadamente.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_2" value="sim2" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_2" value="nao3" class="requi"/><label>Não
+</label></li></ul> 
+
+                        <h3>A qualidade do meu desempenho no trabalho ou nos estudos foi prejudicada por causa do meu consumo de álcool.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_3" value="sim3" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_3" value="nao4" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Eu tenho me sentido com menos energia ou cansado(a) por causa do meu consumo de álcool.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_4" value="sim4" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_4" value="nao5" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>O consumo de álcool me levou a situações sexuais das quais eu me arrependi depois.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_5" value="sim5" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_5" value="nao6" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Muitas vezes acabei bebendo em noites nas quais tinha planejado não beber.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_6" value="sim6" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_6" value="nao7" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>A minha aparência física tem sido prejudicada pelo meu consumo de álcool.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_7" value="sim7" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_7" value="nao8" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Quando bebi, fiz ou disse coisas embaraçosas.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_8" value="sim8" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_8" value="nao9" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Me senti muito enjoado(a) ou vomitei depois de ter bebido.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_9" value="sim9" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_9" value="nao10" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Faltei ao trabalho ou às aulas por causa do consumo de álcool, ressaca ou alguma doença provocada pelo consumo de bebidas alcoólicas.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_10" value="sim10" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_10" value="nao11" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Quando alcoolizado(a), fiz coisas impulsivas das quais me arrependi mais tarde </h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_11" value="sim11" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_11" value="nao12" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Estou acima do peso por causa do consumo de álcool.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_12" value="sim12" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_12" value="nao13" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Tenho gasto muito tempo bebendo.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_13" value="sim13" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_13" value="nao14" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Tenho me sentido mal comigo mesmo devido ao meu consumo de bebidas alcoólicas.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_14" value="sim14" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_14" value="nao15" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>O meu consumo bebidas alcoólicas tem criado problemas na relação com o meu namorado(a) ou esposo(a), pais ou outros familiares próximos.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_15" value="sim15" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_15" value="nao16" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Tenho sentido necessidade de tomar uma bebida alcoólica logo ao me levantar (antes do café da manhã).</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_16" value="sim16" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_16" value="nao17" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Já dirigi um carro mesmo sabendo que tinha bebido demais para dirigir com segurança.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_17" value="sim17" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_17" value="nao18" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Negligenciei obrigações em relação à família, trabalho ou escola por causa da bebida.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_18" value="sim18" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_18" value="nao19" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Muitas vezes tive dificuldade em controlar a quantidade de álcool que bebi.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_19" value="sim19" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_19" value="nao20" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Já fiquei inconsciente depois de beber.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_20" value="sim20" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_20" value="nao21" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Tornei-me muito rude, desagradável ou desrespeitoso depois de consumir bebidas alcoólicas.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_21" value="sim21" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_21" value="nao22" class="requi"/><label>Não
+</label></li></ul>
+
+                        <h3>Descobri que precisava beber maiores quantidades de álcool para sentir algum efeito, ou que já não conseguia me sentir eufórico ou bêbado com a mesma quantidade de bebidas alcoólicas que costumava tomar.</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_30_22" value="sim22" class="requi"/><label>Sim
+</label></li>   <li><input type="radio" name="question_30_22" value="nao23" class="requi"/><label>Não
+</label></li></ul>
+
+
+</div>
+</div><!-- end step question 4-->
+
+        <div class="step row" >    
+
+    <div class="col-md-12">
+        <h3>Você sabia que<span>uma dose padrão de álcool equivale a</span></h3>
+    </div>
+
+    <div class="col-md-3 col-sm-3 add_bottom_30 box">
+        <p><img src="img/icon-1.png" alt="Icon"></p>
+        <h4>40ml</h4>
+        <p>
+            de pinga, uísca ou vodca
+        </p>
+    </div>
+    
+    <div class="col-md-3 col-sm-3 add_bottom_30 box">
+        <p><img src="img/icon-2.png" alt="Icon"></p>
+        <h4>140ml</h4>
+        <p>
+            de vinha de mesa
+        </p>
+    </div>
+    
+    <div class="col-md-3 col-sm-3 add_bottom_30 box">
+        <p><img src="img/icon-3.png" alt="Icon"></p>
+        <h4>340ml</h4>
+        <p>
+            de cerveja ou chop = 1 lata
+        </p>
+    </div>
+
+        <div class="col-md-3 col-sm-3 add_bottom_30 box">
+        <p><img src="img/icon-4.png" alt="Icon"></p>
+        <h4>600ml</h4>
+        <p>
+            1 garrafa grande cerveja contém 2 doses
+        </p>
+    </div>
+    
+                                           
+            <div class="col-md-10">
+                        <h3>Pensando em um estudante universitário típico, com que frequência você acha que ele consome bebidas alcoólicas?</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Menos do que uma vez por mês
+</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Uma vez por mês
+</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Duas ou três vezes por mês
+</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Uma ou duas vezes por semana
+</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Três ou quatro vezes por semana</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Quase todos os dias</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Todos os dias</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                                                              <div class="step row" >
+            <div class="col-md-10">
+                        <h3>Pensando em um estudante universitário típico, o quanto você acha que ele bebe em uma semana típica:
+</h3>
+                        <ul class="data-list-2" >
+            <li><input type="radio" name="question_4" value="answer 1 question 4" class="requi"/><label>Nenhuma dose</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>1-2 doses</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>3-4 doses</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>5-6 doses</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>7-8 doses</label></li>
+            <li><input type="radio" name="question_4" value="answer 2 question 4" class="requi"/><label>Mais do que 8 doses</label></li>
+                        </ul>
+        </div>
+       </div><!-- end step question 4-->
+
+                   <div class="step row" >
+              <div class="col-md-10">
+                        <h3>O quão importante é para você para mudar seu consumo de álcool atual?</h3>
+              </div>
+                        <div class="col-md-6">
+                            <ul>
+                                          <li><div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div></li>
+                            </ul>
+                        </div>
+
+            </div><!-- end step question 4-->
+
+                        <div class="step row" >
+              <div class="col-md-10">
+                        <h3>O quão pronto você está atualmente para mudar seu consumo de álcool?</h3>
+              </div>
+                        <div class="col-md-6">
+                            <ul>
+                                          <li><div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div></li>
+                            </ul>
+                        </div>
+
+            </div><!-- end step question 4-->
+
+
+
+              <div class="submit step complete" id="satisfied">
+                    	<i class="icon-check"></i>
+						<h3>Survey complete! Thank you for you time.</h3>
+						<button type="submit" name="process" class="submit">Submit the survey</button>
+					</div><!-- end submit step -->
+                    
+                    </div><!-- end middle-wizard -->
+
+                    <div id="bottom-wizard">
+                        <button type="button" name="backward" class="backward">Anterior</button>
+                        <button type="button" name="forward" class="forward">Seguinte</button>
+                    </div><!-- end bottom-wizard -->
+	</form>
+    
+</div><!-- end Survey container -->
+</section><!-- end section main container -->
+       
+<footer>
+	<section class="container">
+	<div class="row">
+    	<div class="col-md-6">
+        	<h3>Sobre</h3>
+            <p>A Pesquisa Universitária sobre bebidas avalia o consumo de bebidas alcóolicas entre os estudantes universitários brasileiros. Através do questionário é possível avaliar o consumo indivual em relação aos outros universtiários.</p>
+        </div>
+        
+        <div class="col-md-6" id="contact">
+        	<h3>Contato</h3>
+            <p>Entre em contato com os responsáveis através dos contatos abaixos:</p> 
+                <ul>
+                        <li><i class="icon-home"></i> Departamento de Psicologia da UNIFESP, SP - Brasil</li>
+                        <li><i class="icon-phone"></i> Telefone: +55 11 2149-0156 </li>
+                        <li><i class="icon-envelope"></i> Email: <a href="#">andrebedendo@gmail.com</a></li>
+                        <li><i class="icon-skype"></i> Skype: Andre.bedendo</li>
+                    </ul>    
+        </div>
+        
+        </div>
+        
+    </div><!-- end row -->
+  	</section>
+    
+    <section id="footer_2">
+    <div class="container">
+    <div class="row">
+    	<div class="col-md-6">
+                <ul id="footer-nav">
+                	<li>Copyright© PUB 2018</li>
+                </ul>              
+        </div>
+            <div class="col-md-6" style="text-align:center">
+                <ul class="social-bookmarks clearfix">
+                    <li class="facebook"><a href="#">facebook</a></li>
+                </ul>
+            </div>
+        </div>
+		</div>
+    </section>
+
+</footer> 
+ 
+ <div id="toTop">Voltar ao topo</div>  
+
+<!-- Modal About -->
+<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="termsLabel">Termos e Condições</h4>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum 
+sanctus, pro ne quod dicunt sensibus.</p>
+<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum 
+sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum 
+sanctus, pro ne quod dicunt sensibus.</p>
+<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum 
+sanctus, pro ne quod dicunt sensibus.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- OTHER JS --> 
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/jquery.tweet.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.switch.min.js"></script>
+<script src="js/quantity-bt.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/retina.js"></script>
+<script src="js/functions.js"></script>
+
+<!-- FANCYBOX -->
+<script  src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.4" type="text/javascript"></script> 
+<script src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5" type="text/javascript"></script> 
+<script src="js/fancy_func.js" type="text/javascript"></script> 
+
+</body>
+</html>
